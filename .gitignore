@@ -1,11 +1,29 @@
-*.pyc
-.vscode
-output
-build
-diff_rasterization/diff_rast.egg-info
-diff_rasterization/dist
-tensorboard_3d
-screenshots
-data/
-data
-submodules/
+# Python/cache artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local editor settings
+.vscode/
+
+# Datasets and generated experiment outputs
+/data/
+/output/
+/tensorboard_3d/
+/screenshots/
+
+# Model/checkpoint/render artifacts that may be created outside output/
+*.pth
+*.pt
+*.ckpt
+*.mp4
+*.avi
+*.mov
+
+# Build/install artifacts
+/build/
+dist/
+*.egg-info/
+submodules/**/build/
+submodules/**/dist/
+submodules/**/*.egg-info/
